@@ -1,0 +1,107 @@
+head	1.3;
+access;
+symbols;
+locks
+	lam:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2020.01.04.11.55.31;	author lam;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2016.10.18.09.00.43;	author lam;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2010.07.28.06.19.36;	author lam;	state Exp;
+branches;
+next	;
+
+
+desc
+@My Remote static site index.
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@<head>
+<title>LAM Alaska Remote static site Free Web Space</title>
+<meta name="Author" content="www.ServerAdmin@@lam1.us" />
+<!--
+                              By: Lawrence A. Murakami - Fairbanks, Alaska -->
+
+<link rel="Shortcut Icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="Public/Style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<center><h1>LAM Alaska <a href=".">Remote static site</a><br>
+<a href="Free-Web-Space.html">Free Web Space</a></h1></center>
+
+As of Tuesday, October 18, 2016 GCI no longer offers a static web space along with internet service.
+<h2>Index of <a href="http://home.gci.net/~lamurakami" target="_top">
+
+ http://home.gci.net/~lamurakami </a> = 404 Not Found!
+</h2>
+
+I redirected the aliases so all point to the directory on my main server that was the staging directory for the GCI remote static site.
+
+<h2><a href="http://gci.lam1.us" target="_top"> gci.lam1.us </a>
+aka <a href="http://ip.lam1.us" target="_top"> ip.lam1.us </a>	&nbsp;
+ <a href="http://ip.lamurakami.com" target="_top"> ip.lamurakami.com </a>
+</h2>
+
+For six plus years my server created an IPStatus.html page with "Connection Status" information including the current IP Address every hour and uploaded it to this static web site.  An "Old IP Address" value for what the DNS configuration represented was highlighted in yellow when it did not match the current IP address.  I then manually updated the DNS records and when all was well updated the "Old IP Address" value.
+<p>
+The GCI remote static site has been unavailable for some time and I was considering what to do.  I found that ASUS provides a Dynamic Domain Name Service at no additional charge to ASUS device users.  My ASUS RT-AC66U router handles the Dynamic DNS and all I had to do was pick a subdomain.
+
+<h2>
+<a href="http://LAMurakami.ASUScomm.com/">LAMurakami.ASUScomm.com</a>
+ - ASUS Dynamic Domain Name Service
+</h2>
+
+I then modified my DNS records to use CNAME records to alias me to the Dynamic ASUS subdomain intead of A records pointing to a specific IP address.  I don't have to do anything else until I get a new router.
+<p>
+So as 2016 closes I no longer have the GCI remote static site as part of my internet service even though I am paying more than ever and I can do without it.
+@
+
+
+1.2
+log
+@Removed ip.lam-ak.com
+@
+text
+@d14 2
+d18 7
+a24 2
+ http://home.gci.net/~lamurakami </a>
+<br>aka <a href="http://ip.lam1.us" target="_top"> ip.lam1.us </a>	&nbsp;
+d26 5
+d32 3
+a34 4
+<br><br>See <a href="http://gci.lam1.us" target="_top"> gci.lam1.us </a>
+ for related information and 
+<a href="http://gci.lam1.us/IPStatus" target="_top">gci.lam1.us/IPStatus</a>
+ for current IP Status.
+d36 4
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d18 1
+a18 2
+ <a href="http://ip.lamurakami.com" target="_top"> ip.lamurakami.com </a> &nbsp;
+ <a href="http://ip.lam-ak.com" target="_top"> ip.lam-ak.com </a>
+@

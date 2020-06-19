@@ -1,0 +1,38 @@
+head	1.1;
+access;
+symbols;
+locks
+	lam:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2010.07.28.05.38.14;	author lam;	state Exp;
+branches;
+next	;
+
+
+desc
+@default.htm document created during provisioning.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+ <HEAD>
+  <TITLE>Under Construction!</TITLE>
+ </HEAD>
+
+ <BODY>
+  Welcome to lamurakami's new home page.
+  <P>You will want to modify this file "default.htm" to suit your needs.</P>
+  <P>Until it is modified, this site will be labeled <STRONG>Under Construction.</STRONG></P>
+
+  <P>
+ </BODY>
+</HTML>
+@

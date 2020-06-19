@@ -1,0 +1,30 @@
+head	1.1;
+access;
+symbols;
+locks
+	lam:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2010.07.28.06.20.19;	author lam;	state Exp;
+branches;
+next	;
+
+
+desc
+@A test html page.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<title>LAM Alaska</title>
+<center>
+<h1>LAM Alaska</h1>
+<h2>Test Web Page</h2>
+With test content.
+</center>@

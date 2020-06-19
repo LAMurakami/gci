@@ -1,0 +1,114 @@
+head	1.3;
+access;
+symbols;
+locks
+	lam:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2018.05.16.05.44.14;	author lam;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.05.16.05.32.29;	author lam;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.01.20.06.29.15;	author lam;	state Exp;
+branches;
+next	;
+
+
+desc
+@gci.lam1.us menuBar
+@
+
+
+1.3
+log
+@Replace q server with ak17 gci - drop many About pages
+@
+text
+@<!-- $Id: menuBar.html,v 1.2 2018/05/16 05:32:29 lam Exp lam $ -->
+<div id="top_nav" align="center"><div id="menuwrapper" align="center">
+<ul id="menuBar" style="margin-bottom: 0px;">
+
+<li><a class="trigger" href="/" name="top"> LAM Alaska</a></li>
+<li><a class="trigger" href="/About">       About</a>
+    <ul>
+    <li><a href="/time">                     * time</a></li>
+    </ul>
+</li><!-- END About -->
+<li><a class="trigger" href="http://sites.LAM1.us/"> aka</a>
+    <ul>
+    <li><a href="http://gci.LAM1.us/?lam">    * http://gci.LAM1.us  </a></li>
+    <li><a href="https://ak17.LAM1.us/?lam">   * https://ak17.LAM1.us  </a></li>
+    </ul>
+</li><!-- END aka -->
+<li><a class="trigger" href="#tail">        Contact me</a>
+    <ul>
+    <li><a href="/?dir">                    * 907-978-0260</a></li>
+    <li><a href="MailTo:gci.ServerAdmin@@lam1.us">
+                                            * gci.ServerAdmin@@lam1.us</a></li>
+    </ul>
+</li><!-- END Contact me -->
+</ul>
+</div></div><br class="clearit"><!-- END top_nav menuwrapper menuBar -->
+@
+
+
+1.2
+log
+@Added some About pages
+@
+text
+@d1 1
+a1 1
+<!-- $Id: menuBar.html,v 1.1 2009/01/20 06:29:15 lam Exp lam $ -->
+a2 1
+
+d8 1
+a8 3
+    <li><a href="/About/Simple-Pages.html"> * Simple Pages</a></li>
+    <li><a href="/About/Program/IPStatus">  * IPStatus</a></li>
+    <li><a href="/About/Program/Better-Config-File"> * Better-Config-File</a></li>
+a10 7
+<li><a class="trigger" href="/About/Public"> Public</a>
+    <ul>
+    <li><a href="/IPStatus">                 * IPStatus</a></li>
+    <li><a href="/Better-Config-File">       * Better-Config-File</a></li>
+    <li><a href="/time">                     * time</a></li>
+    </ul>
+</li><!-- END Public -->
+d13 2
+a14 2
+    <li><a href="http://q.LAM1.us/?lam">    * http://q.LAM1.us  </a></li>
+    <li><a href="https://q.LAM1.us/?lam">   * https://q.LAM1.us  </a></li>
+d20 2
+a21 2
+    <li><a href="MailTo:z.ServerAdmin@@lam1.us">
+                                            * z.ServerAdmin@@lam1.us</a></li>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<!-- $Id$ -->
+d7 1
+a7 1
+<li><a class="trigger" href="/About/gci.lam1.us"> About</a>
+d9 3
+a11 1
+    <li><a href="/time">                    * time</a></li>
+d14 7
+a35 1
+
+@

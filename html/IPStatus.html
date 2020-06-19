@@ -1,0 +1,194 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head><title>
+ LAM Alaska Connection Status</title>
+<meta name="Author" content="q.ServerAdmin@lam1.us" />
+<!--
+                              By: Lawrence A. Murakami - Fairbanks, Alaska -->
+
+<link rel="Shortcut Icon" href="/Images/My/Journal.ico" />
+<link rel="stylesheet" type="text/css" href="/Public/Style.css" />
+<script type="text/javascript" src="/Public/Scripts/Java/Navigation.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body onload="initializeMenuBarforIE();">
+<!-- Private -->
+<!-- $Id: IPStatus.html,v 1.7 2020/01/04 11:41:16 lam Exp lam $ -->
+<!-- menuBar.html -r1.44 /var/www/html/Private/Content/menuBar.html
+     https://ak7.lam1.us/Private/Content/menuBar.html
+     lam@ak7.lam1.us:/var/www/html/Private/Content/menuBar.html
+     https://ak7.lam1.us/RCS?File=/var/www/html/Private/Content/menuBar.html
+     rcsdiff /var/www/html/Private/Content/menuBar.html
+ -->
+
+<div id="top_nav"><div id="menuwrapper">
+<ul id="menuBar" style="margin-bottom: 0px;">
+<li><a class="trigger" href="/" name="top">
+
+                                            LAM Alaska</a>
+</li>
+<li><a class="trigger" href="/Private/Content/menuBar.html"> About</a>
+    <ul>
+    <li><a href="https://ak7.lam1.us/About/"> * About</a>
+    <li><a href="/whatis">                  * whatis</a></li>
+    <li><a href="/apropos">                 * apropos</a></li>
+    <li><a href="/man">                     * man</a></li>
+    <li><a href="/a/LAM_Alaska">            * LAM Alaska</a></li>
+    <li><a href="/php">                     * PHP</a></li>
+    <li><a href="/manual">                  * Apache</a></li>
+    <li><a href="http://z.lam1.us/About/MySQL/"> * MySQL</a></li>
+    <li><a href="http://z.lam1.us/About/python/"> * python</a></li>
+    <li><a href="/manual/mod/mod_python">   * Mod_python</a></li>
+    </ul>
+</li><!-- END About -->
+<li><a class="trigger" href="/Public">      Public</a>
+    <ul>
+    <li><a href="/IPStatus">                * IPStatus</a></li>
+    <li><a href="/time">                    * time</a></li>
+    <li><a href="/Cookies">                 * Cookies</a></li>
+    <li><a href="/Escape">                  * Escape</a></li>
+    <li><a href="/Error-Logs-Test?Submit=View">
+                                            * Error Logs</a></li>
+    <li><a href="/df">                      * disk space</a></li>
+    <li><a href="/Better-Config-File">      * Better-Config-File</a></li>
+    <li><a href="/displayPage-Test">        * displayPage-Test</a></li>
+    </ul>
+</li><!-- END Public -->
+<li><a class="trigger" href="/Private">      Private</a>
+    <ul>
+    <li><a href="/Comments">                * Comments</a></li>
+    <li><a href="/MySQL?SelfURL=on">        * MySQL</a></li>
+    <li><a href="/phpMyAdmin">              * phpMyAdmin</a></li>
+    <li><a href="/qMail">                   * qMail</a></li>
+    
+    </ul>
+</li><!-- END Private -->
+<li><a class="trigger" href="/RCS">         RCS</a>
+    <ul>
+    <li><a href="/RCS?File=/etc/httpd/conf/httpd.conf">
+                                            * httpd.conf</a></li>
+    <li><a href="/RCS?File=/usr/lib/perl5/site_perl/LAM/LAM.pm">
+                                            * LAM.pm</a></li>
+    <li><a href="/RCS?File=/var/www/html/Private/Content/menuBar.html">
+                                            * Private menuBar</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Content/menuBar.html">
+                                            * Public menuBar.html</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/no-ssl/Index.cgi-pl">
+                                            * no-ssl Index.cgi-pl</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/No-SSL.cgi-pl">
+                                            * no-ssl</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/Error-404.cgi-pl">
+                                            * Error-404</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/whatis.cgi-pl">
+                                            * whatis</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/man.cgi-pl">
+                                            * man</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/Error-Logs-Test.cgi-pl">
+                                            * Error Logs</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/TimeMark.cgi-pl">
+                                            * TimeMark</a></li>
+    <li><a href="/RCS?File=/var/www/html/Public/Scripts/Escape.cgi-pl">
+                                            * Escape</a></li>
+    <li><a href="/RCS?File=/var/www/html/XTreme.html">
+                                            * XTreme.html</a></li>
+    <li><a href="/RCS?File=/var/www/html/Private/Scripts/Comments.cgi-pl">
+                                            * Comments.cgi-pl</a></li>
+    <li><a href="/RCS?File=/var/www/html/Private/Scripts/MySQL.cgi-pl">
+                                            * MySQL.cgi-pl</a></li>
+    </ul>
+</li><!-- END RCS -->
+<li><a class="trigger" href="/Comments?Submit=View;ListLength=55;Topic=LAM;Name=;Qualifier=;SelfURL=on">
+                                            LAM</a>
+    <ul>
+    <li><a href="/Comments?Submit=View;ListLength=20;Topic=ARSC;SelfURL=on">
+                                            * ARSC</a></li>
+    <li><a href="/Comments?Submit=View;ListLength=20;Topic=LAM1.us;SelfURL=on">
+                                            * LAM1.us</a></li>
+    <li><a href="/MySQL?QueryTitle=Linux+Summary;Query=select+BOOK_NAME+as+Topic%2C+GUEST_NAME+as+Name%2C%0D%0A+++++++count(DATE_TIME)+as+Count%2C%0D%0A+++++++max(DATE_TIME)+as+%27Last+entry%27%2C+%27-%27%2C+min(DATE_TIME)+as+%27First+entry%27%0D%0Afrom+guestbook%0D%0Awhere+DATE_TIME+%3C+%272055-05-20+00:00:00%27%0D%0A++and+BOOK_NAME+=+%27Linux%27%0D%0Agroup+by+Topic%2C+Name+order+by+Name;RequestType=executeMySQL;SupressSQL=on;Submit=Linux;TableRowFormat=%23Topic+Name+SubQuery;ListLength=200;SelfURL=on">
+                                            * LAM Linux Summary</a></li>
+    <li><a href="/MySQL?QueryTitle=LAM+%27To+Do%27+Summary;SelfURL=on;Query=select+BOOK_NAME+as+Topic%2C+GUEST_NAME+as+Name%2C+EMAIL_ADDRESS+as+Title%2C%0D%0A+++++++count%28DATE_TIME%29+as+Count%2C%0D%0A+++++++max%28DATE_TIME%29+as+%27Last+entry%27%2C+%27-%27%2C+min%28DATE_TIME%29+as+%27First+entry%27%0D%0Afrom+guestbook%0D%0Awhere+BOOK_NAME+%3D+%27LAM%27%0D%0A++and+GUEST_NAME+%3D+%27To+Do%27%0D%0Agroup+by+Topic%2C+Name%2C+Title+order+by+Title;TableHeader=%23Qualifier+SubQuery+Header;TableRowFormat=%23Qualifier+SubQuery;ListLength=200;SupressSQL=on;Submit=Submit+Query">
+                                            * LAM 'To Do' Summary</a></li>
+    <li><a href="/Comments?HeaderText=Most+recent+comments;Submit=View;ListLength=20;Supress=None;WhereText=+where+DATE_TIME+%3C+now%28%29++and+not+%28BOOK_NAME+%3D+%27Movie%27+or+BOOK_NAME+%3D+%27CDDVD%27+or+BOOK_NAME+%3D+%27Album%27+or+BOOK_NAME+%3D+%27TV+Series%27%29%0D%0A">
+                                            * Most recent comments</a></li>
+    <li><a href="/MySQL?QueryTitle=Most+recent+comments+summary;Query=select+BOOK_NAME+as+Topic%2C+GUEST_NAME+as+Name%2C+EMAIL_ADDRESS+as+Qualifier%2C%0D%0A+++++++count%28DATE_TIME%29+as+Count%2C%0D%0A+++++++max%28DATE_TIME%29+as+%27Last+entry%27%2C+%27-%27%2C+min%28DATE_TIME%29+as+%27First+entry%27%0D%0A+from+guestbook%0D%0Awhere+DATE_TIME+%3C+now%28%29%0D%0A++and+not+%28BOOK_NAME+%3D+%27Movie%27+or+BOOK_NAME+%3D+%27CDDVD%27+or+BOOK_NAME+%3D+%27Album%27+or+BOOK_NAME+%3D+%27TV+Series%27%29%0D%0Agroup+by+Topic%2C+Name%2C+Qualifier+order+by+%60Last+entry%60+desc%0D%0A;TableHeader=%3Ctr%3E%0D%0A%3Ctd%3E%3Cb%3ETopic+-+Name+-+Qualifier%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ECount%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ELast+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3E-%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3EFirst+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%3C%2Ftr%3E%0D%0A;SupressSQL=on;TableRowFormat=%23Topic+Name+Qualifier+SubQuery;SelfURL=on;ListLength=299;Submit=Submit+Query">
+                                            * Summary  </a></li>
+    <li><a href="/Comments?HeaderText=Most+recent+media+comments;Submit=View;ListLength=20;Supress=None;WhereText=+where+DATE_TIME+%3C+now%28%29++and+%28BOOK_NAME+%3D+%27Movie%27+or+BOOK_NAME+%3D+%27CDDVD%27+or+BOOK_NAME+%3D+%27Album%27+or+BOOK_NAME+%3D+%27TV+Series%27%29%0D%0A">
+                                            * Most recent media comments</a></li>
+    <li><a href="/MySQL?QueryTitle=Most+recent+comments+summary;Query=select+BOOK_NAME+as+Topic%2C+GUEST_NAME+as+Name%2C+EMAIL_ADDRESS+as+Qualifier%2C%0D%0A+++++++count%28DATE_TIME%29+as+Count%2C%0D%0A+++++++max%28DATE_TIME%29+as+%27Last+entry%27%2C+%27-%27%2C+min%28DATE_TIME%29+as+%27First+entry%27%0D%0A+from+guestbook%0D%0Awhere+DATE_TIME+%3C+now%28%29%0D%0A++and+%28BOOK_NAME+%3D+%27Movie%27+or+BOOK_NAME+%3D+%27CDDVD%27+or+BOOK_NAME+%3D+%27Album%27+or+BOOK_NAME+%3D+%27TV+Series%27%29%0D%0Agroup+by+Topic%2C+Name%2C+Qualifier+order+by+%60Last+entry%60+desc%0D%0A;TableHeader=%3Ctr%3E%0D%0A%3Ctd%3E%3Cb%3ETopic+-+Name+-+Qualifier%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ECount%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ELast+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3E-%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3EFirst+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%3C%2Ftr%3E%0D%0A;SupressSQL=on;TableRowFormat=%23Topic+Name+Qualifier+SubQuery;ListLength=299;SelfURL=on;Submit=Submit+Query">
+                                            * Summary  </a></li>
+    <li><a href="/Comments?HeaderText=Search;ShowQueryText=on;WhereText=where+MESSAGE+like+%27%25Wain220WkCYS016%25%27">
+                                            * Find an entry by search text  </a></li>
+    <li><a href="/MySQL?QueryTitle=Search+summary;Query=select+BOOK_NAME+as+Topic%2C+GUEST_NAME+as+Name%2C+EMAIL_ADDRESS+as+Qualifier%2C%0D%0A+++++++count%28DATE_TIME%29+as+Count%2C%0D%0A+++++++max%28DATE_TIME%29+as+%27Last+entry%27%2C+%27-%27%2C+min%28DATE_TIME%29+as+%27First+entry%27%0D%0A+from+guestbook%0D%0Awhere+MESSAGE+like+%27%25%3Cb+lam%25%27%0D%0A++and+DATE_TIME+%3C+now%28%29%0D%0Agroup+by+Topic%2C+Name%2C+Qualifier+order+by+%60Last+entry%60+desc%0D%0A;TableHeader=%3Ctr%3E%0D%0A%3Ctd%3E%3Cb%3ETopic+-+Name+-+Qualifier%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ECount%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3ELast+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3E-%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%0D%0A%3Ctd%3E%3Cb%3EFirst+entry%3C%2Fb%3E%3Cbr%3E%3Chr%3E%3C%2Ftd%3E%3C%2Ftr%3E%0D%0A;TableRowFormat=%23Topic+Name+Qualifier+SubQuery;SelfURL=on;ListLength=299">
+                                            * Summary  </a></li>
+    </ul>
+</li><!-- END LAM -->
+<li><a class="trigger" href="#tail">        aka</a>
+    <ul>
+    <li><a href="http://z.lam1.us/About/z.lam1.us/"> * http://z.LAM1.us  </a></li>
+    <li><a href="MailTo:www.ServerAdmin@lam-ak.com"> * 907-978-0260
+                                            www.ServerAdmin@lam-ak.com</a></li>
+    <li><a href="http://sites.lam1.us/">    * http://sites.lam1.us  </a></li>
+    <li><a href="http://cabo.LAM1.us/">     * http://cabo.LAM1.us  </a></li>
+    <li><a href="http://q.LAM1.us/">        * http://q.LAM1.us  </a></li>
+    <li><a href="https://ak7.lam1.us/Comments?Submit=View;Name=WordPress;Topic=Program">
+                                            * WordPress Topic</a></li>
+    <li><a href="http://alaskademocrat.org/Blog"> * http://AlaskaDemocrat.org/Blog  </a></li>
+    </ul>
+</li><!-- END Contact me -->
+</ul>
+</div></div><br class="clearit"><!-- END top_nav menuwrapper menuBar -->
+
+<center><table><tr><td bgcolor="lime"><center>
+ <!-- 
+SCRIPT_NAME: /var/www/html/Public/Scripts/IPStatus.cgi-pl
+ --> 
+/
+<a href="/IPStatus?Source">
+IPStatus.cgi-pl
+</a>
+
+</center></td></tr> <tr><td> <hr />
+<!-- 
+Body text:
+ -->
+<center><h1>LAM Alaska Connection Status<br>
+(<a href="/About/Program/IPStatus">IPStatus</a>)
+</h1>
+
+<table border><tr><td align=right>
+
+     IP Address:	</td><td><a href="http://72.42.136.250">
+
+		72.42.136.250	</a></td></tr><tr><td align=right>
+
+  Cable Modem MAC Address:</td><td>e8:3e:fc:4f:3e:07</td></tr><tr><td align=right>
+Internet Port MAC Address:</td><td>10:c3:7b:42:f1:c8</td></tr><tr><td align=right>
+
+    Subnet Mask:</td><td>255.255.248.0</td></tr><tr><td align=right>
+Default Gateway:</td><td>72.42.136.1</td></tr><tr><td align=right>
+     DNS Server:</td><td>209.165.131.12 209.165.131.13</td></tr><tr><td align=right>
+Current Date Time:</td><td>2015-11-19 08:29:56</td></tr><tr><td align=right>
+     Lease Time:</td><td>1 day</td></tr><tr><td align=right>
+  Lease Expires:</td><td bgcolor=lime>19 hours, 23 minutes, 9 seconds</td></tr><tr><td align=right>
+ Old IP Address:</td><td bgcolor=yellow>65.74.49.142
+</td></tr></table>
+</center>
+
+<p><table border>
+<tr><td>REMOTE_ADDR:</td><td>137.229.21.35</td></tr>
+<tr><td>HTTP_USER_AGENT:</td><td>Mozilla/5.0 (X11; Linux x86_64; rv:42.0) Gecko/20100101 Firefox/42.0</td></tr>
+<tr><td>SERVER_ADDR:</td><td>10.55.5.77</td></tr>
+</td></tr></table>
+
+
+</td></tr></table></center><hr />
+3,553 visits (2 today, 19 this week, 158 this
+              month, 1,461 this year)<br />
+
+137.229.21.35 GET from server 
+<a target="_top" href="/">ak7.lam1.us</a><p class="Right">
+ Thursday, November 19, 2015 @ 8:29:56 AM <br /> lam-ak-7.ServerAdmin@lam1.us</p>
+</body>
+</html>
