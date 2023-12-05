@@ -7,9 +7,9 @@ that can be implemented with:
 
  cd /var/www; git clone git@github.com:LAMurakami/gci
 
- sudo ln -s /var/www/gci/gci_apache2.conf /etc/apache2/sites-available/082_gci.conf
+ sudo ln -s /var/www/gci/gci_apache2.conf /etc/apache2/sites-available/000-gci.conf
 
- sudo a2ensite 082_gci
+ sudo a2ensite 000-gci
 
  sudo systemctl reload apache2
 
