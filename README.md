@@ -5,7 +5,7 @@ Dynamic Domain Name Service subdomain possibly being served by the instance.
 This repo contains content in the html folder and an apache2 configuration
 that can be implemented with:
 
- cd /var/www; git clone git@github.com:LAMurakami/gci
+ cd /var/www; git clone git<span>@</span>github.com:LAMurakami/gci
 
  sudo ln -s /var/www/gci/gci_apache2.conf /etc/apache2/sites-available/000-gci.conf
 
