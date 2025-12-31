@@ -1,9 +1,9 @@
 # My site by IP Address
 ## GitLab and GitHub public Projects/Repositories
 The
-[gitlab.com/aws-lam/aws](https://gitlab.com/aws-lam/gci)
+[gitlab.com/aws-lam/gci](https://gitlab.com/aws-lam/gci)
 Project is a clone of the
-[github.com/LAMurakami/aws](https://github.com/LAMurakami/gci)
+[github.com/LAMurakami/gci](https://github.com/LAMurakami/gci)
 Repostory.  My
 [gitlab.com/LAMurakami](https://gitlab.com/LAMurakami)
 account was created so that Projects can be cloned using https without
