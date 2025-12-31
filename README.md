@@ -15,7 +15,8 @@ Repostories that can only be accessed over IPv6 with the
 ## by IP Address website
 [https://gci.lam1.us](https://gci.lam1.us)
 
-[https://lam3.freeddns.org](https://lam3.freeddns.org)
+[lam3.freeddns.org](https://lam3.freeddns.org)
+or
 [lam1ak.duckdns.org](https://lam1ak.duckdns.org)
 Dynamic Domain Name Service subdomain possibly being served by the instance.
 
