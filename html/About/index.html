@@ -36,39 +36,47 @@ scp -p index.html ak20:/var/www/gci/About
  - Remote static site with my current IP Address information.
 <br>
 <a href="https://ak20.lam1.us">ak20.lam1.us</a>
-<a href="http://192.168.0.20">192.168.0.20</a>
+<a href="http://192.168.40.2">192.168.40.2</a>
 <a href="https://ak19.lam1.us">ak19.lam1.us</a>
-<a href="http://192.168.0.19">192.168.0.19</a>
+<a href="http://192.168.40.7">192.168.40.7</a>
 <a href="https://ak24.lam1.us">ak24.lam1.us</a>
-<a href="http://192.168.0.24">192.168.0.24</a>
+<a href="http://192.168.40.9">192.168.40.9</a>
 <a href="https://ak23.lam1.us">ak23.lam1.us</a>
-<a href="http://192.168.0.23">192.168.0.23</a>
+<a href="http://192.168.40.8">192.168.40.8</a>
  - Current LAN domain names and IP Addresses of http and https services
 <p>
-<a href="http://72.42.143.125">                http://72.42.143.125  </a>
+<a href="http://69.178.40.183">                http://69.178.40.183  </a>
  - My WAN IP Address
  &nbsp; &nbsp; aka:
-<a href="http://125-143-42-72.gci.net">        http://125-143-42-72.gci.net  </a>
+<a href="http://183-40-178-69.gci.net">        http://183-40-178-69.gci.net  </a>
 
 <center><h2><a href="/">This site</a> is one of the
 <a href="https://sites.lam1.us">virtual hosts of my server</a>.</h2>
 </center>
-
+The <a href="https://gitlab.com/aws-lam/gci">gitlab.com/aws-lam/gci Project</a> is a clone of the <a href="https://github.com/LAMurakami/gci">github.com/LAMurakami/gci Repostory</a>.
+and source of
+<a href="https://gci.lam1.us">https://gci.lam1.us</a>
+<p>
 This site is accessed via a public IPv4 address provided by my Internet Service provider (ISP) on a Cable Modem / Gateway / Wireless Access Point that provides Network Address Translation (NAT) service and port forwarding for multiple computers on the Local Area Network (LAN).
 <p>
 I forward the standard http and https ports to my main server ak20:<ul><li>
-HTTP 80 (192.168.0.20) ak20 - Multiple virtual hosts gci.lam1.us<li>
-HTTPS 443 (192.168.0.20) ak20 - *.lam.us Let's Encrypt certificate</ul>
+HTTP 80 (192.168.40.2) ak20 - Multiple virtual hosts gci.lam1.us<li>
+HTTPS 443 (192.168.40.2) ak20 - *.lam.us Let's Encrypt certificate</ul>
 I forwared alternate ports for ssh access with public key access allowed to all my linux machines<ul><li>
-SSH 55519 (192.168.0.19) ak19 - laptop<li>
-SSH 55520 (192.168.0.20) ak20 - main server<li>
-SSH 55523 (192.168.0.23) ak23 - media workstation<li>
-SSH 55524 (192.168.0.24) ak24 - bedroom media workstation</ul>
+SSH 55519 (192.168.40.7) ak19 - laptop<li>
+SSH 55520 (192.168.40.2) ak20 - main server<li>
+SSH 55524 (192.168.40.9) ak24 - bedroom media workstation</ul>
 I forwared an alternate IMAPS TCP-UDP port<ul><li>
-IMAPS 55593 (192.168.0.20) ak20 - main server</ul>
+IMAPS 55593 (192.168.40.2) ak20 - main server</ul>
 Log
 
 <ul><li>
+Monday, May 4, 2026 - Switch to 192.168.40.2/24 CIDR block from 192.168.0.20/24
+ <ul><li>The br0 is not seen by the AK-Fi Home app from GCI.
+ <li>GCI is no longer provisioning internet service for residential users without AK-Fi Home activated.
+ <li>I have lost the ability to ssh to one of the machines through the NAT gateway by activating AK-Fi Home with GCI.
+ <li>SSH 55523 (192.168.40.8) ak23 - media workstation - br0 to allow QEMU servers LAM Alaska LAN access
+</ul><li>
 Tuesday, December 30, 2025 - Add gitlab source repository link.<li>
 Thursday, September 25, 2025 - Switch to 192.168.0.20/24 CIDR block from 10.55.5.20/24<li>
 Sunday, January 5, 2025 - Added port forwarding section to About page.<li>
