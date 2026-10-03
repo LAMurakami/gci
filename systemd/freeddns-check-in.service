@@ -1,0 +1,9 @@
+[Unit]
+Description=Check in to dynu.com for .freeddns.org
+
+[Service]
+Type=simple
+ExecStart=/var/www/gci/systemd/freeddns-check-in
+Restart=no
+User=lam
+Group=staff

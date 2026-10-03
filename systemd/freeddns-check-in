@@ -1,0 +1,9 @@
+#!/bin/bash
+curl_out=$( echo \
+url="https://api-ipv4.dynu.com/nic/update?username=LAMurakami&password=$(cat \
+~/.dynu-password)&hostname=.freeddns.org" \
+| curl --silent --insecure --config - ) ;
+
+if [[ ${curl_out} != "nochg" ]]; then 
+echo "${curl_out} IPv4 address update for lam{1,2,3,urakami}.freeddns.org"
+fi
