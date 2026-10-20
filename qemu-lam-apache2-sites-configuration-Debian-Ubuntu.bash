@@ -67,6 +67,13 @@ ln -s /var/www/sites/sites_ssl_lam1-apache2.conf \
 /etc/apache2/sites-available/031_sites_ssl_lam1.conf
 a2ensite 031_sites_ssl_lam1
 
+ln -s /var/www/cabo/cabo_apache2.conf /etc/apache2/sites-available/040_cabo.conf
+a2ensite 040_cabo
+
+ln -s /var/www/cabo/cabo_ssl_lam1_apache2.conf \
+/etc/apache2/sites-available/041_cabo_ssl_lam1.conf
+a2ensite 041_cabo_ssl_lam1
+
 ln -s /var/www/z/z_apache2.conf /etc/apache2/sites-available/050_z.conf
 a2ensite 050_z
 
@@ -80,6 +87,21 @@ a2ensite 060_arsc
 ln -s /var/www/arsc/arsc_ssl_lam1_apache2.conf \
 /etc/apache2/sites-available/061_arsc_ssl_lam1.conf
 a2ensite 061_arsc_ssl_lam1
+
+ln -s /var/www/olnes/olnes_apache2.conf /etc/apache2/sites-available/120_olnes.conf
+a2ensite 120_olnes
+
+ln -s /var/www/olnes/olnes_ssl_lam1_apache2.conf \
+/etc/apache2/sites-available/121_olnes_ssl_lam1.conf
+a2ensite 121_olnes_ssl_lam1
+
+ln -s /var/www/cape_fairbanks/cape_fairbanks_apache2.conf \
+/etc/apache2/sites-available/210_cape_fairbanks.conf
+a2ensite 210_cape_fairbanks
+
+ln -s /var/www/cape_fairbanks/cape_fairbanks_ssl_lam1_apache2.conf \
+/etc/apache2/sites-available/211_cape_fairbanks_ssl_lam1.conf
+a2ensite 211_cape_fairbanks_ssl_lam1
 
 ln -s /var/www/no-ssl/no-ssl_apache2.conf /etc/apache2/sites-available/980-no-ssl.conf
 a2ensite 980-no-ssl
